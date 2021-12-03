@@ -2,3 +2,63 @@
 @import 'setup';
 @import 'header';
 @import 'nav';
+@import 'typography';
+
+$fontStyleOne: 'Montserrat', sans-serif;
+$fontStyleTwo: 'Open Sans', sans-serif;
+
+.wrapper {
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+html {
+    font-size: 125%;
+    line-height: 1.15;
+    color: #333333;
+}
+
+/* =======================
+TYPOGRAPHY
+======================= */
+
+.brandSection{
+    background-color: #C3DAB7;
+    text-align: center;
+}
+
+.overlapContainer{
+    position: relative;
+    padding-top: 20%;
+}
+
+.overlapImg{
+    
+    width: 50%;
+    height: auto;
+}
+
+.circleText{
+        bottom: 25%;
+    left: 15%;
+    position: absolute;
+    height: 50%;
+    width: auto;
+}
+
+.brandDesign{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15%;
+}
+
+
+.branding,
+.design{
+    width:50%;
+    padding: 20px;
+}
+
+
+

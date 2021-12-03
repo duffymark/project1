@@ -1,0 +1,60 @@
+$fontStyleOne: 'Montserrat', sans-serif;
+$fontStyleTwo: 'Open Sans', sans-serif;
+
+/* =======================
+FONT IMPORTS
+======================= */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+/* =======================
+TYPOGRAPHY
+======================= */
+
+html {
+    font-size: 125%;
+    line-height: 1.15;
+}
+
+.centeredLogo{
+    font-family: $fontStyleOne;
+    font-size: 2.313rem;
+    letter-spacing: 0.056rem;
+}
+
+.headerNav ul li{
+    font-family: $fontStyleOne;
+    font-size: 1.125rem;
+    letter-spacing: 0.019rem;
+}
+
+body{
+    font-family: $fontStyleTwo;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.019rem;
+}
+
+button{
+    font-family: $fontStyleOne;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.044rem;
+}
+
+h2, 
+h3{
+    font-family: $fontStyleOne;
+    font-size: 1.125rem; 
+    line-height: 1.5rem;
+    letter-spacing: 0.113rem;
+}
+
+ul li{
+    text-decoration: none;
+    list-style-type: none;
+}

@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -235,7 +239,138 @@ html {
   overflow: hidden;
 }
 
-header ul {
+header {
+  background: url(../assets/home-1.jpeg) center;
+  height: 100vh;
+}
+
+.headerNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headerNav ul li {
+  text-decoration: none;
+}
+
+.leftLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.leftLinks li {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.rightLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.rightLinks li {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+/* =======================
+FONT IMPORTS
+======================= */
+/* =======================
+TYPOGRAPHY
+======================= */
+html {
+  font-size: 125%;
+  line-height: 1.15;
+}
+
+.centeredLogo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.313rem;
+  letter-spacing: 0.056rem;
+}
+
+.headerNav ul li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  letter-spacing: 0.019rem;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.019rem;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.044rem;
+}
+
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.113rem;
+}
+
+ul li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+html {
+  font-size: 125%;
+  line-height: 1.15;
+  color: #333333;
+}
+
+/* =======================
+TYPOGRAPHY
+======================= */
+.brandSection {
+  background-color: #C3DAB7;
+  text-align: center;
+}
+
+.overlapContainer {
+  position: relative;
+  padding-top: 20%;
+}
+
+.overlapImg {
+  width: 50%;
+  height: auto;
+}
+
+.circleText {
+  bottom: 25%;
+  left: 15%;
+  position: absolute;
+  height: 50%;
+  width: auto;
+}
+
+.brandDesign {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -243,4 +378,11 @@ header ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  padding-bottom: 15%;
+}
+
+.branding,
+.design {
+  width: 50%;
+  padding: 20px;
 }

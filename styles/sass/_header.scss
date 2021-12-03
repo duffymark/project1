@@ -8,15 +8,35 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
-header ul{
-    display: flex;
-    flex-direction: row;
+header{
+background: url(../assets/home-1.jpeg) center;
+height: 100vh;
 }
 
-font-family: 'Montserrat', sans-serif;
+.headerNav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
 
-font-family: 'Open Sans', sans-serif;
+.headerNav ul li {
+    text-decoration: none;
+}
+
+.leftLinks {
+    display: flex;
+    
+}
+
+.leftLinks li{
+    justify-content: flex-start;
+}
+
+.rightLinks{
+    display: flex;
+   
+}
+
+.rightLinks li{
+justify-content: flex-end;
+}
