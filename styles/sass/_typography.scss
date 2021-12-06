@@ -18,6 +18,9 @@ TYPOGRAPHY
 html {
     font-size: 125%;
     line-height: 1.15;
+    font-size: $fontStyleTwo;
+    font-size: 0.875rem;
+    letter-spacing: 0.019rem;
 }
 
 .centeredLogo{
@@ -52,6 +55,7 @@ h3{
     font-size: 1.125rem; 
     line-height: 1.5rem;
     letter-spacing: 0.113rem;
+    font-weight: normal;
 }
 
 p{
@@ -64,3 +68,4 @@ ul li{
     text-decoration: none;
     list-style-type: none;
 }
+

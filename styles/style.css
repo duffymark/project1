@@ -239,6 +239,13 @@ html {
   overflow: hidden;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 header {
   background: url(../assets/home-1.jpeg) center;
   height: 100vh;
@@ -291,6 +298,9 @@ TYPOGRAPHY
 html {
   font-size: 125%;
   line-height: 1.15;
+  font-size: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+  letter-spacing: 0.019rem;
 }
 
 .centeredLogo {
@@ -325,6 +335,7 @@ h3 {
   font-size: 1.125rem;
   line-height: 1.5rem;
   letter-spacing: 0.113rem;
+  font-weight: normal;
 }
 
 p {
@@ -351,6 +362,12 @@ ul li {
   margin: 0 auto;
 }
 
+/*
+img{
+display: block;
+max-width: 100%;
+}
+*/
 html {
   font-size: 125%;
   line-height: 1.15;
@@ -506,24 +523,97 @@ section {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .galleryBox-1 {
+  background: grey;
+  width: 50%;
+  margin: 0;
+  padding: 0;
   -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
-  width: 200px;
-  height: 200px;
-  margin: 10px;
-  background: black;
+      -ms-flex: 2 1 auto;
+          flex: 2 1 auto;
 }
 
-.galleryBox img,
-.galleryBox h3 {
+.galleryBox img {
+  margin: 0;
+  padding: 0;
+}
+
+.galleryBox,
+.galleryBox-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25%;
+  margin: 0;
+  padding: 0;
+}
+
+.galleryBox2 h3 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* DROP US A LINE */
+.dropLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dropLine button {
+  width: 25%;
+}
+
+.dropLineImage img {
+  max-width: 95vh;
+}
+
+.dropLineText {
+  text-align: center;
+  background: #C3DAB7 center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.dropLineText button {
+  margin: 0 auto;
+}
+
+.col {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  width: 200px;
-  height: 200px;
-  margin: 10px;
+  width: 50%;
+}
+
+/* FOOTER */
+.footerInfo {
+  background: #333333;
+}
+
+footer {
+  color: #f6f6f6;
+}
+
+footer i {
+  color: #f6f6f6;
 }

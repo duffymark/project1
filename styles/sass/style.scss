@@ -21,6 +21,12 @@ $fontStyleTwo: 'Open Sans', sans-serif;
     max-width: 1080px;
     margin: 0 auto;
 }
+/*
+img{
+display: block;
+max-width: 100%;
+}
+*/
 
 html {
     font-size: 125%;
@@ -147,28 +153,94 @@ section{
 
 .meetOurTeam h2{
     text-align: center;
+    
 }
 
 .teamGallery ul{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 
 
 .galleryBox-1{
-    flex: 2;
-    width: 200px;
-    height: 200px;
-    margin: 10px;
-    background: black;
+    background: grey;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    flex: 2 1 auto;
 }
 
-.galleryBox img,
-.galleryBox h3{
-    flex:1;
-    width: 200px;
-    height: 200px;
-    margin: 10px;
+.galleryBox img{
+    margin: 0;
+    padding: 0;
 }
 
+.galleryBox,
+.galleryBox-2{
+    display: flex;
+    width: 25%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.galleryBox2 h3{
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* DROP US A LINE */
+
+
+.dropLine {
+    display: flex;
+}
+
+
+.dropLine button{
+    width: 25%;
+}
+
+.dropLineImage{
+    
+}
+
+.dropLineImage img{
+    max-width: 95vh;
+}
+
+.dropLineText{
+    text-align: center;
+    background: #C3DAB7 center;
+    
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dropLineText button{
+    margin: 0 auto;
+}
+
+.col{
+    flex: 1; 
+    width: 50%;
+}
+
+/* FOOTER */
+
+.footerInfo{
+    background: #333333;
+}
+
+footer{
+    color: #f6f6f6;
+}
+
+footer i{
+    color: #f6f6f6;
+}
