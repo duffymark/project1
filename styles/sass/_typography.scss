@@ -23,16 +23,31 @@ html {
     letter-spacing: 0.019rem;
 }
 
+a{
+    text-decoration: none;
+    color: #333333;
+}
+
 .centeredLogo{
     font-family: $fontStyleOne;
     font-size: 2.313rem;
     letter-spacing: 0.056rem;
 }
 
-.headerNav ul li{
+.headerNav,
+.rightLinks,
+.leftlinks{
     font-family: $fontStyleOne;
     font-size: 1.125rem;
     letter-spacing: 0.019rem;
+    color: #333333;
+}
+
+a:visited{
+    text-decoration: none; 
+    a, a:visited{
+    color: #333333;
+} 
 }
 
 body{
@@ -67,5 +82,47 @@ p{
 ul li{
     text-decoration: none;
     list-style-type: none;
+}
+
+footer h2{
+    font-family: $fontStyleOne;
+    font-size: 1.125rem;
+    letter-spacing: 0.019rem;
+    text-transform: uppercase;
+    
+}
+
+footer li{
+    font-family: $fontStyleTwo;
+    font-size: 0.7rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.019rem;
+}
+
+footer p{
+    font-family: $fontStyleTwo;
+    font-size: 0.7rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.019rem;
+}
+
+.recentPosts h2{
+    text-align: center;
+}
+
+.recentPosts ul li{
+    list-style-type: disc;
+}
+
+.headline{
+    list-style-type: none;
+}
+
+.emailSignup{
+    text-align: right;
+}
+
+.footerLogo{
+    text-align: center;
 }
 

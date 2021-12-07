@@ -14,15 +14,16 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
   box-sizing: border-box;
 }
 
-header{
+.index{
 background: url(../assets/home-1.jpeg) center;
 height: 100vh;
 }
 
+/* 
 .headerNav{
     display: flex;
     width: 100%;
-    align-items: center;
+    
 }
 
 .headerNav ul li {
@@ -40,9 +41,86 @@ height: 100vh;
 
 .rightLinks{
     display: flex;
+    text-align: right;
    
 }
 
 .rightLinks li{
 justify-content: flex-end;
+}
+*/
+/*============================
+BLOG NAV
+
+=============================*/
+.blogPage{
+    background: url(../assets/blog-1.jpeg) top;
+    height: 100vh;
+    background-size: 100%;
+}
+
+.headerNavBlog{
+    display: flex;
+    width: 100%;
+}
+
+.headerNavBlog ul li {
+    text-decoration: none;
+}
+
+
+/*============================
+CONTACT NAV
+
+=============================*/
+
+.centeredLogo{
+    padding: 10px;
+}
+
+.headerNav ul li {
+    text-decoration: none;
+}
+
+.leftNav {
+    display:flex;
+    list-style-type:none;
+    padding:0;
+    justify-content:flex-end;
+}
+
+.leftLinks li{
+        flex-direction: row;
+        padding: 10px;
+}
+
+.headerNav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerNav ul li{
+    display: inline-block;
+}
+
+.headerNav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.leftLinks{
+    display: flex;
+    margin-right:auto;
+}
+
+.rightLinks{
+    margin-left:auto;
+    display: flex;
+    
+}
+
+.rightLinks li{
+    padding: 10px;
+    
 }
