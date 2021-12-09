@@ -10,13 +10,12 @@
 </head>
 
 <header>
-    
         <nav class="headerNavBlog blogPage">
             
             <ul class="leftLinks">
-                <li><a href="">Home</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Portfolio</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Portfolio</a></li>
             </ul>
     
             <div class="centeredLogo">
@@ -29,9 +28,7 @@
                 <li><a href=""><i class="fas fa-search"></i></a></li>
                 <li><a href=""><i class="fas fa-shopping-bag"></i></a></li>
             </ul>
-        
-        </nav>
-        
+        </nav>  
 </header>
 
 <body>
@@ -45,12 +42,13 @@
             <div class="adminRow">
                 
                 <ul class="alexAdmin">
-                    <li class="leftMenu"><img src="../assets/blog-2.jpeg" alt=""></li>
+                    <li class="leftMenu"><img src="../assets/blog-2.jpeg" alt="A woman's headshot photo"></li>
                     <li class="leftMenu">
                         <h5>Alex</h5>
                         <h6>Administrator</h6>
                     </li>
                 </ul>
+                
                 <ul>
                     <li class="rightMenu">
                         <h5>Date</h5>
@@ -88,15 +86,15 @@
     </div>
             <div class="postGallery">
                 <div>
-                    <img src="../assets/blog-3.jpeg" alt="">
+                    <img src="../assets/blog-3.jpeg" alt="a desk with plants, glasses, a computer, and a lamp, beside a window">
                     <p>July, 25, 2018</p>
                 </div>
                 <div>
-                    <img src="../assets/blog-4.jpeg" alt="">
+                    <img src="../assets/blog-4.jpeg" alt="A table with a plant, candles, cactus, a letter A, and a grid.">
                     <p>July, 26, 2018</p>
                 </div>
                 <div>
-                    <img src="../assets/blog-5.jpeg" alt="">
+                    <img src="../assets/blog-5.jpeg" alt="A desk with a cactus, tea, cellphone, and laptop.">
                     <p>July, 28, 2018</p>
                 </div>
             </div>
@@ -104,7 +102,7 @@
             <div class="comments">
                 <h2>02 Comments</h2>
                     <div class="comment-1">
-                        <img src="../assets/blog-6.jpeg" alt="">
+                        <img src="../assets/blog-6.jpeg" alt="A headshot of a woman by the water and hills.">
                         <ul>
                             <li><h5>Daniel Vandaft <span>-Reply</span></h5></li>
                             <li><h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6></li>
@@ -113,7 +111,7 @@
             </div>
 
             <div class="comment-2">
-                <img src="../assets/blog-7.jpeg" alt="">
+                <img src="../assets/blog-7.jpeg" alt="A picture of a man bt a green background.">
                 <ul>
                     <li>
                     <h5>Jenifer Loopz<span>-Reply</span></h5>
@@ -132,16 +130,19 @@
 
 <section>
     <div class="wrapper">
-        <h2>Leave Comment</h2>
-            <div class="inputField">
-                <input type="text" id="nameForm" placeholder="Enter your name...">
-                <input type="email" id="emailForm" placeholder="youremail@domain.com">
-                <input type="text" id="subjectForm" placeholder="Subject (Optional)">
-            </div>
-
-            <div>
-                <input type="text">
-                <button></button>
+        <div class="leaveComment">
+            <h2>Leave Comment</h2>
+        </div>
+            <div class="contactForms">
+                <div class="inputField">
+                    <input type="text" id="nameForm" placeholder="Enter your name...">
+                    <input type="email" id="emailForm" placeholder="youremail@domain.com">
+                    <input type="text" id="subjectForm" placeholder="Subject (Optional)">
+                </div>
+                <div>
+                    <input type="text" name="message" placeholder="Here goes your message">
+                    <button class="formButton"><a>Send Message</a></button>
+                </div>
             </div>
         </div>
 </section>
@@ -197,12 +198,13 @@
                         <li>
                             <p>Signup for emails and notifications below.</p>
                         </li>
-
-                        <li class="emailLine"><input type="email" placeholder="Enter your email"><button><i
-                                    class="fas fa-long-arrow-alt-right"></i></button></li>
-
-
                     </ul>
+                    <div class="inputContainer">
+                    
+                        <input id="footerEmail" type="email" placeholder="Enter your email">
+                    
+                        <button class="footerButton"><i class="fas fa-long-arrow-alt-right"></i></button>
+                    </div>
                 </div>
             </div>
         </div>

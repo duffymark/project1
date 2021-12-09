@@ -4,14 +4,8 @@
 @import 'nav';
 @import 'typography';
 @import 'variables';
-
-/*
-@import "scss/fontawesome.scss";
-@import "scss/regular.scss";
-@import "scss/fontawesome.scss";
-@import "scss/brands.scss";
-@import "scss/solid.scss"; */
-
+@import 'footer';
+@import 'media';
 
 $fontStyleOne: 'Montserrat', sans-serif;
 $fontStyleTwo: 'Open Sans', sans-serif;
@@ -40,6 +34,10 @@ html {
 
 i{
     color: black;
+}
+
+a:hover{
+    cursor: pointer;
 }
 
 /* =======================
@@ -98,6 +96,11 @@ Gallery
 
 .gallery a i{
     font-size: 1.5rem;
+    color: #333333
+}
+
+.gallery a i:hover{
+    color: black;
 }
 
 .gallery img{
@@ -110,22 +113,27 @@ Gallery
     align-items: center;
     margin: 0 auto;
     width: 75%;
-    padding-bottom: 3rem;
+    padding-bottom: 5rem;
 }
 
 /*              Features                  */
 .iconGallery{
-    background: url(../assets/home-4.jpeg) center;
+    background: url(../assets/home-4.jpeg) left;
     height: 100vh;
     background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align:center;
+    margin:auto;
+    padding:0;
 }
 
 
 .container{
     display: flex;
-    min-height: 100vh;
+    min-height: 90vh;
     flex-wrap: wrap;
-    padding-left: 35%;
+    padding-left: 30%;
     padding-top: 30px;
 }
 
@@ -133,8 +141,8 @@ Gallery
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    padding: 5px;
+    width: 48%;
+    padding: 0px;
 }
 
 .featuresIcon i{
@@ -145,71 +153,111 @@ Gallery
     color: #333333;
     border: 2px solid #333333;
     border-radius: 360px;
-    padding: 7px;
-    
+    padding: 12px;
+}
+
+.titleText h3{
+    color: #333333;
+    text-transform: uppercase;
+    padding-left: 30px;
+}
+
+.titleText p{
+    color: grey;
+    font-style: $fontStyleTwo;
+    font-size: 0.7rem;
+    letter-spacing: 0.019rem;
+    padding-left: 30px;
 }
 
 
     
  // MEET OUR TEAM //
 
- .teamPadding{
-     padding-top: 150px;
-     padding-bottom:150px;
- }
+.teamPadding{
+    position: relative;
+    padding-top: 150px;
+    padding-bottom:150px;
+}
+
+.teamPadding::before{
+    content:"";
+    border-left: 2px solid grey;
+    margin: 0 auto;
+    height: 5%;
+    position: absolute;
+    top: 8%;
+}
+
+.teamPadding{
+    position: relative;
+}
+
+.meetOurTeam p{
+    border-left: 2px solid grey;
+    height: 20px;
+}
+
 
 .meetOurTeam h2{
     text-align: center;
-    
+    padding-bottom: 10%;
+    text-transform: uppercase;
 }
 
-.teamGallery ul{
+/* GRID GALLERY - Grid Layout Assembled Using https://grid.layoutit.com/ */
+
+.galleryImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.teamGallery {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 30px 30px; 
+    grid-template-areas: 
+    "img1 img1 img2 img3"
+    "img4 img5 img6 img7"; 
+}
+
+.img1 { 
+    grid-area: img1; 
+    grid-column-start:1;
+    grid-column-end:3;
+    grid-row-start:1;
+    grid-row-end:1;
+}
+
+.img2 { grid-area: img2; }
+.img3 { grid-area: img3; }
+.img4 { grid-area: img4; }
+.img5 { grid-area: img5; }
+.img6 { grid-area: img6; }
+.img7 { grid-area: img7; }
+
+.img1{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    justify-content: center;
+    background-color: lightgray;
+    padding: 5% 5% 5% 10%;
 }
 
-
-
-.galleryBox-1{
-    background: grey;
-    width: 50%;
-    margin: 0;
-    padding: 0;
-    flex: 2 1 auto;
+.img1 p {
+    color: grey;  
 }
 
-.galleryBox img{
-    margin: 0;
-    padding: 0;
-}
-
-.galleryBox,
-.galleryBox-2{
+.img7 {
     display: flex;
-    width: 25%;
-    margin: 0;
-    padding: 0;
-    
-}
-
-.galleryBox2{
-    display: flex;
-}
-
-.galleryBox-2 h3{
-    align-items: center;
     justify-content: center;
     align-items: center;
-}
-
-.margin-1{
-    margin: 2px;
-    display: inline-block
-}
-
-.teamGallery{
-    
+    text-align: center;
+    align-content: center;
 }
 
 /* DROP US A LINE */
@@ -220,16 +268,21 @@ Gallery
 }
 
 
-.dropLine button{
-    width: 25%;
+.portButton{
+    width: 30%;
+    background: white;
+    border: none;
+    padding: 2% 1%;
 }
 
-.dropLineImage{
-    
+.portButton a{
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .dropLineImage img{
-    max-width: 95vh;
+    width: 100%;
+    height: 100%;
 }
 
 .dropLineText{
@@ -242,6 +295,11 @@ Gallery
     flex-direction: column;
 }
 
+.dropLineText h2,
+.dropLine p {
+    padding: 0 10% 5%;
+}
+
 .dropLineText button{
     margin: 0 auto;
 }
@@ -249,50 +307,6 @@ Gallery
 .col{
     flex: 1; 
     width: 50%;
-}
-
-/* FOOTER */
-
-.footerInfo{
-    background: #333333;
-    background-size: auto;
-}
-
-footer{
-    color: #f6f6f6;
-}
-
-footer i{
-    color: #f6f6f6;
-}
-
-.socialMediaIcons{
-    padding-top: 10px;
-    word-spacing: 20px;
-    color: #f6f6f6;
-}
-
-.footerContainer{
-    display: flex;
-    justify-content: space-between;
-    padding: 10% 0;
-}
-
-footer h2{
-    padding-bottom: 30px;
-
-}
-
-.emailLine{
-    padding-top: 20px;
-}
-
-.footerLogo{
-    border-top: 1px solid #f6f6f6;
-}
-
-.footerLogo h2{
-    padding-top: 5%;
 }
 
 /*=====================
@@ -362,6 +376,18 @@ Blog Styles
     padding-left: 15px;
 }
 
+.leaveComment h2{
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid lightslategray;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.leaveComment{
+    padding: 60px 0px 30px 0;
+}
+
 /* RELATED POST */
 
 .relatedPost{
@@ -385,7 +411,179 @@ Blog Styles
     padding: 0 10px;
 }
 
+.comments h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    border: none;
+    border-bottom: 2px solid lightgrey;
+}
+
+.comment-1{
+    display: flex;
+    padding-bottom: 30px;
+    padding-top: 5%;
+}
+
+.comment-1 ul{
+    display: flex;
+    flex-direction: column;
+    background:  #f6f6f6;
+    width: 100%
+}
+
+.comment-1 img {
+    padding-right: 40px;
+    height: 90%;
+}
+
+.comment-2 img {
+    padding-right: 40px;
+    height: 90%;
+}
+
+.comment-2{
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.comment-2 ul{
+    display: flex;
+    flex-direction: column;
+    background: #f6f6f6;
+    width: 100%;
+}
 
 
+
+/* CONTACT US PAGE */
+
+.quarterImg{
+    background: url(../assets/contact-1.jpeg);
+    background-size: cover;
+height: 30vh;
+overflow: hidden;
+}
+
+.quarterImg{
+    position: relative;
+  
+}
+
+.contactUsText{
+    position: absolute;
+    top: 41%;
+    left: 12%;
+    width: 0%;
+    padding-bottom: 10%;
+}
+
+.contSect{
+    padding-bottom: 120px;
+    padding-top: 3%;
+}
+
+/* Contact Details Section*/
+
+.detailsText h2{
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+.detailsText p{
+    padding-bottom: 40px;
+    width: 55%;
+}
+
+.contactIcons {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+.iconRow{
+    font-size: 55px;
+    padding: 30px;
+}
+
+.iconRow ul li i{
+    padding-bottom: 20px;
+}
+
+.iconRow li h2{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.sideBorder{
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    padding: 0 70px;
+    height: 100%;
+}
+
+/* GET IN TOUCH SECTION */
+
+.getInTouch,
+.getInTouch h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.getInTouch p {
+    padding-bottom: 20px;
+}
+
+/* GET IN TOUCH FORMS */
+
+input[type=text],
+input[type=email] {
+    width: calc(33.3% - 40px);
+    padding: 20px 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid lightgrey;
+}
+
+input[name=message] {
+    width: 100%;
+    height: 200px;
+    padding: 0px;
+    margin: 0;
+    border-bottom: 2px solid lightgrey;
+}
+
+*:focus {
+    outline: none;
+}
+
+.formButton {
+    padding-top: 60px;
+    margin: 0;
+    border: none;
+    border-bottom: 2px solid black;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: none;
+    
+}
+
+.contactImage-2 img {
+    min-height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+.contactImage-2{
+    margin: 0;
+    padding: 0px;
+}
+
+.contactForms{
+    padding-bottom: 90px;
+}
 
 

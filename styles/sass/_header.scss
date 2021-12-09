@@ -14,45 +14,24 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
   box-sizing: border-box;
 }
 
+
 .index{
 background: url(../assets/home-1.jpeg) center;
 height: 100vh;
 }
 
-/* 
-.headerNav{
-    display: flex;
-    width: 100%;
-    
-}
 
-.headerNav ul li {
-    text-decoration: none;
-}
 
-.leftLinks {
-    display: flex;
-    
-}
-
-.leftLinks li{
-    justify-content: flex-start;
-}
-
-.rightLinks{
-    display: flex;
-    text-align: right;
-   
-}
-
-.rightLinks li{
-justify-content: flex-end;
-}
-*/
 /*============================
 BLOG NAV
 
 =============================*/
+.burger a{
+    visibility: hidden;
+}
+.burger i{
+    visibility: hidden;
+}
 .blogPage{
     background: url(../assets/blog-1.jpeg) top;
     height: 100vh;
@@ -60,6 +39,9 @@ BLOG NAV
 }
 
 .headerNavBlog{
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
     display: flex;
     width: 100%;
 }
@@ -68,9 +50,13 @@ BLOG NAV
     text-decoration: none;
 }
 
+.headerNavBlog a:hover{
+    text-decoration: line-through;
+}
+
 
 /*============================
-CONTACT NAV
+Universal Nav Styles
 
 =============================*/
 
@@ -124,3 +110,4 @@ CONTACT NAV
     padding: 10px;
     
 }
+

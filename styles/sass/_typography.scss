@@ -32,15 +32,22 @@ a{
     font-family: $fontStyleOne;
     font-size: 2.313rem;
     letter-spacing: 0.056rem;
+    font-weight: bold;
 }
 
 .headerNav,
-.rightLinks,
-.leftlinks{
+.leftlinks li{
     font-family: $fontStyleOne;
     font-size: 1.125rem;
     letter-spacing: 0.019rem;
     color: #333333;
+}
+
+.rightLinks{
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.019rem;
 }
 
 a:visited{

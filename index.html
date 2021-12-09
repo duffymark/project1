@@ -12,22 +12,26 @@
 </head>
 <!--   NAV BAR   -->
 <header class="index">
-    <nav class="headerNav">
-        <ul class="leftNav">
-            <li class="leftlinks"><a href="">Home</a></li>
-            <li class="leftlinks"><a href="">Blog</a></li>
-            <li class="leftlinks"><a href="">Portfolio</a></li>
-        </ul>
+    <div class="burger"><i class="fas fa-bars"></i><a class="logo" href="">CREATIVE</a></div>
+    <nav class="headerNavBlog">
 
+
+    
+        <ul class="leftLinks">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="./html/blog.html">Blog</a></li>
+            <li><a href="./html/contact.html">Portfolio</a></li>
+        </ul>
+    
         <div class="centeredLogo">
             <a class="logo" href="">CREATIVE</a>
         </div>
-
-        <ul class="rightNav">
-            <li class="rightLinks"><a href="">Shop</a></li>
-            <li class="rightLinks"><a href="">Contact</a></li>
-            <li class="rightLinks"><a href=""><i class="fas fa-search"></i></a></li>
-            <li class="rightLinks"><a href=""><i class="fas fa-shopping-bag"></i></a></li>
+    
+        <ul class="rightLinks">
+            <li><a href="">Shop</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href=""><i class="fas fa-search"></i></a></li>
+            <li><a href=""><i class="fas fa-shopping-bag"></i></a></li>
         </ul>
     </nav>
 </header>
@@ -59,7 +63,7 @@
         <div class="wrapper">
                 <div class="gallery">
                     <a href="#"><i class="fas fa-chevron-left"></i></a>
-                    <img src="./assets/home-3.jpeg" alt="A computer screen with a shirtless man on it">
+                    <img src="./assets/home-3.jpeg" alt="A computer screen with a picture of an old shirtless man on it">
                     <a href="#"><i class="fas fa-chevron-right"></i></a>
                 </div>
                 <div class="galleryText">
@@ -160,6 +164,7 @@
             </div>
             </div>
 </div>
+    </section>
             
 <!--MEET OUR TEAM-->
     <section class="teamPadding">
@@ -169,18 +174,38 @@
             </div>
 
             <div class="teamGallery">
-                <ul>
-                    <li class= "galleryBox-1 margin-1">
-                        <h3>Team Players</h3>
-                        <p>Pitch Client interaction design ownership disruptive leverage prototype conversion. Deployment validation gen-z disruptive paradigm shift churn rate niche market graphical user interface.</p>
-                    </li>
-                    <li class="galleryBox margin-1"><img src="./assets/home-5.jpeg" alt="An employee's photo"></li>
-                    <li class="galleryBox margin-1"><img src="./assets/home-6.jpeg" alt="An employee's photo"></li>
-                    <li class="galleryBox margin-1"><img src="./assets/home-7.jpeg" alt="An employee's photo"></li>
-                    <li class="galleryBox margin-1"><img src="./assets/home-8.jpeg" alt="An employee's photo"></li>
-                    <li class="galleryBox margin-1"><img src="./assets/home-9.jpeg" alt="An employee's photo"></li>
-                    <li class="galleryBox-2 margin-1"><h3>Want to work with us!?</h3></li>
-                </ul>
+                <div class="img1">
+                    <h3>Team Players</h3>
+                    <p>Pitch Client interaction design ownership disruptive leverage prototype conversion. Deployment validation gen-z
+                    disruptive paradigm shift churn rate niche market graphical user interface.</p>
+                </div>
+
+                <div class="img2">
+                    <img class="img3 galleryImg" src="./assets/home-5.jpeg" alt="An employee's headshot photo wearing a tie and vest">
+                </div>
+
+                <div class="img3">
+                    <img class="img3 galleryImg" src="./assets/home-6.jpeg" alt="An employee's headshot photo sitting on a couch">
+                </div>
+
+                <div class="img4">
+                    <img class="img4 galleryImg" src="./assets/home-7.jpeg" alt="An employee's headshot photo with a brick background">
+                </div>
+
+                <div class="img5">
+                    <img class="img5 galleryImg" src="./assets/home-8.jpeg" alt="An employee's headshot photo looking into the camera">
+                </div>
+
+                <div class="img6">
+                    <img class="img6 galleryImg" src="./assets/home-9.jpeg" alt="An employee's headshot photo wearing glasses">
+                </div>
+
+                <div class="img7">
+                    <h3 class="img7 galleryImg">Want to work with us!?</h3>
+                </div>
+            </div>
+
+
             </div>
         </div>
     </section>
@@ -191,7 +216,7 @@
                 <div class="dropLineText col">
                     <h2>Drop us a line</h2>
                     <p>Pitch client interaction design ownership disruptive leverage prototype conversion. Deployment validation gen-z disruptive paradigm shift churn rate niche market graphical user interface. </p>
-                    <button>View Portfolio</button>
+                    <button class="portButton"><a href="./html/contact.html">View Portfolio</a></button>
                 </div>
             
 
@@ -240,11 +265,19 @@
                 <ul>
                     <h2>Twitter Widget</h2>
                     <li><p>Signup for emails and notifications below.</p></li>
+</ul>
 
-                    <li class="emailLine"><input type="email" placeholder="Enter your email"><button><i class="fas fa-long-arrow-alt-right"></i></button></li>
+
+                    <div class="inputContainer">
+
+                        <input id="footerEmail" type="email" placeholder="Enter your email">
+                        
+                        <button class="footerButton"><i class="fas fa-long-arrow-alt-right"></i></button>
+                    </div>
+                    
 
 
-                </ul>
+                
             </div>
             </div>
         </div>
@@ -257,3 +290,4 @@
     
 </body>
 </html>
+

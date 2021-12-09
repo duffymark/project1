@@ -1,5 +1,91 @@
-// inside style.scss
-@import 'setup';
-@import 'header';
-@import 'footer';
-@import 'nav';
+/* FOOTER */
+
+.footerInfo{
+    background: #333333;
+    background-size: auto;
+}
+
+footer{
+    color: #f6f6f6;
+}
+
+footer i{
+    color: #f6f6f6;
+}
+
+.socialMediaIcons{
+    padding-top: 10px;
+    word-spacing: 20px;
+    color: #f6f6f6;
+}
+
+.footerContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10% 0;
+}
+
+footer h2{
+    padding-bottom: 30px;
+
+}
+
+.emailLine{
+    padding-top: 20px;
+    height: 20px 50px;
+}
+
+.footerLogo{
+    border-top: 1px solid #f6f6f6;
+}
+
+.footerLogo h2{
+    padding-top: 5%;
+}
+
+.footerEmail{
+    margin: 0;
+}
+
+.footerButton{
+    margin:0;
+}
+
+.emailSignup ul{
+    padding-bottom: 10%;
+}
+
+/* Button */
+
+
+.inputContainer {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    padding-left: 20px;
+    background-color: white;
+    border: none;
+}
+
+#footerEmail {
+    width: 100%;
+    height: 54px;
+    background: none;
+    border: 0;
+    padding: 0;
+    outline: none;
+}
+
+.footerButton {
+    height: 54px;
+    width: 94px;
+    background-color: #C3DAB7;
+    text-transform: uppercase;
+    border-style: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.footerButton i{
+    color: #333333 ;
+}
