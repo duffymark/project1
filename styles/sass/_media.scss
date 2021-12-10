@@ -4,70 +4,523 @@ HOME MEDIA QUERIES
 ===================*/
 /* Extra small devices (phones, 450px and down) */
 @media only screen and (max-width: 450px) {
+    body {
+    width: 100%;
+    }
     .wrapper {
-        width: 90%;
-        
+    max-width: 95%;
     }
     .headerNavBlog {
-        visibility: hidden;
+    visibility: hidden;
     }
+
     .burger i{
-        visibility: visible;
-        font-size: 300%;
-        padding-bottom: 5%;
+    visibility: visible;
+    font-size: 300%;
+    padding-bottom: 15%;
     }
 
     .burger a{
-        visibility: visible;
-        font-size: 2rem;
-        font-weight: bold;
+    visibility: visible;
+    font-size: 2rem;
+    font-weight: bold;
     }
     .burger{
-        display: flex;
-        justify-content: center;
-        padding-top: 15%;
-        flex-direction: column;
-        text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 25%;
+    flex-direction: column;
+    text-align: center;
     }
     /* =========================*/
 
-    .featuresIcon i{
-        visibility: hidden;
-    }
-    .container{
-        
-        padding: 0;
-        margin: 0;
-    }
-    .box{
-        display: flex;
-        justify-content: left;
-        text-align: left;
-        flex-direction: row;
-        padding: 0;
-        margin: 0;
-    }
-    .box i{
-        padding: 0;
-        margin: 0;
-    }
-    .titleText{
-        display: flex;
-        flex-direction: row;
-        justify-content: left;
-        margin: 0;
-        padding: 0;
-        text-align: left;
+    p{
+    font-size: 0.5rem;
     }
 
-    
+    h3{
+    font-size: 0.75rem;
+    }
+
+    .iconGallery{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    }
+
+    .featuresIcon{
+    visibility: hidden;
+    }
+    .iconGallery .container{
+    padding: 0;
+    text-align: left;
+    width: 100%;
+    }
+    .box{
+    display: flex;
+    align-content: flex-start;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    }
+
+    .titleText p,
+    .titleText h3{
+    margin: 0;
+    padding: 0;
+    }
+
+    .dropLine{
+    display: flex;
+    flex-direction: column;
+        
+    }
+
+    .dropLine button{
+    width: 50%;
+    }
+
+    .dropLineText{
+    padding-bottom: 5%;
+    }
+
+    .dropLineText,
+    .dropLineImage{
+    width: 100%;
+    }
+/* Footer */
+    .footerContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    }
+    .footerContainer h2{
+    text-align: center;
+    }
+
+    .recentPosts{
+    padding-top: 5%;
+    }
+
+    .emailSignup{
+    padding-top: 5%;
+    }
+
+    .emailSignup li{
+    text-align: left;
+    }
+}
+
+/* =================
+MEDA QUERIES 880px
+===================*/
+@media (max-width: 880px) {
+    .box{
+    display: flex;
+    align-content: flex-start;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    }
+
+    .titleText p,
+    .titleText h3{
+    margin: 0;
+    padding: 0;
+    }
+
+    iconGallery {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    }
+
+    .iconGallery .container {
+    padding: 0;
+    text-align: left;
+    width: 100%;
+    }
 }
 
 
 /* =================
-BLOG MEDIA QUERIES
+MEDA QUERIES 930px
+===================*/
+@media (max-width: 930px) {
+    .wrapper {
+    width: 90%;  
+    }
+    .headerNavBlog {
+    visibility: hidden;
+    }
+    .burger i{
+    visibility: visible;
+    font-size: 300%;
+    padding-bottom: 5%;
+    }
+
+    .burger a{
+    visibility: visible;
+    font-size: 2rem;
+    font-weight: bold;
+    }
+    .burger{
+    display: flex;
+    justify-content: center;
+    padding-top: 15%;
+    flex-direction: column;
+    text-align: center;
+    }
+    /* =========================*/
+
+    p{
+    font-size: 0.5rem;
+    }
+
+    h3{
+    font-size: 0.75rem;
+    }
+
+    .iconGallery{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    }
+
+    .featuresIcon{
+    visibility: hidden;
+    }
+
+    .iconGallery .container{
+    padding: 0;
+    text-align: left;
+    width: 100%;
+    }
+
+    .box{
+    display: flex;
+    align-content: flex-start;
+    padding: 0;
+    margin: 0;
+    }
+
+    .titleText p,
+    .titleText h3{
+    margin: 0;
+    padding: 0;
+    }
+
+    .dropLine{
+    display: flex;
+    flex-direction: column;
+    }
+
+    .dropLineText{
+    padding-top: 5%;
+    }
+
+    .dropLine button{
+    width: 50%;
+    }
+
+    .dropLineText{
+    padding-bottom: 5%;
+    }
+
+    .dropLineText,
+    .dropLineImage{
+    width: 100%;
+    }
+
+    .footerContainer {
+    display: flex;
+    flex-direction: column;
+    }
+    .footerContainer h2{
+    text-align: center;
+    }
+
+    .recentPosts{
+    padding-top: 5%;
+    }
+
+    .emailSignup{
+    padding-top: 5%;
+    }
+
+    .emailSignup li{
+    text-align: left;
+    }
+
+    .contactUs,
+    .recentPosts,
+    .emailSignup{
+    margin:0 auto;
+    }
+
+    .contactUs{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    }
+
+    .contactUs ul{
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    }
+
+    .socialMediaIcons {
+    text-align: center;
+    }
+}
+
+/* =================
+MEDIA QUERIES BLOG
 ===================*/
 
 /* =================
-CONTACT MEDIA QUERIES
+MEDIA QUERIES BLOG
 ===================*/
+/* Extra small devices (phones, 450px and down) */
+@media only screen and (max-width: 450px) {
+    body {
+        width: 100%;
+    }
+    .wrapper {
+    max-width: 95%;   
+    }
+
+    .burger {
+    visibility: visible;
+    }
+
+    header{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    }
+
+    /*===============*/
+    
+
+    .blogBack{
+    position: relative;
+    background: url(../assets/blog-1.jpeg);
+    height: 100vh;
+    background-size: cover;
+    }
+
+
+
+    .postGallery {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    }
+
+    .inputField {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    }
+
+    #nameForm,
+    #emailForm,
+    #subjectForm{
+    width: 100%;
+    }
+
+    .alexAdmin{
+    display: flex;
+    flex-direction: column;
+    }
+
+    .alexAdmin ul{
+    justify-content: center;
+    }
+
+    .alexAdmin li{
+    justify-content: center;
+    padding-left: 50px;
+    }
+
+    .rightMenu {
+    padding-left: 50px;
+    }
+}
+
+/* =================
+MEDA QUERIES 930px
+===================*/
+@media (max-width: 930px) {
+    .burger{
+    padding-top: 0;
+    }
+}
+
+/* =================
+MEDA QUERIES 880px
+===================*/
+@media (max-width: 880px) {
+    .inputField {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    }
+
+#nameForm,
+#emailForm,
+#subjectForm{
+    width: 100%;
+    }
+
+}
+
+/* =================
+MEDIA QUERIES CONTAT
+===================*/
+/* Extra small devices (phones, 450px and down) */
+@media only screen and (max-width: 450px) {
+    body {
+    width: 100%;
+    }
+    .wrapper {
+    max-width: 95%;   
+    }
+
+    .burger {
+    visibility: visible;
+    }
+
+    .burger i {
+    padding-top: 5%;
+    }
+
+    header{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    }
+
+    /*===============*/
+    
+
+    .contactBack{
+    background: url(../assets/contact-1.jpeg);
+    background-size: auto;
+    background-size: cover;
+    height: 15vh;
+    overflow: hidden;
+    }
+
+    .contSect {
+    padding-bottom: 60px;
+    }
+
+    .contactUsText{
+    padding: 0;
+    padding-top: 5%;
+    margin: 0; 
+    position: relative;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    }
+
+    .quarterImg{
+    margin: 0;
+    padding: 0;
+    }
+
+    .quarterImg{
+    position: absolute;
+    visibility: hidden;
+    height: 0px;
+    }
+
+    .contactIcons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+    .iconRow ul{
+    display: flex;
+    flex-direction: column;
+    }
+
+    .iconRow ul li{
+    justify-content: center;
+    }
+
+    .iconRow{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    }
+
+    .detailsText{
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+    }
+
+    .detailsText p {
+    width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 930px) {
+    .burger {
+    padding: 0;
+    margin: 0;
+    height: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    flex-direction: column;
+    text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 750px) {
+    .contactIcons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+    .iconRow ul{
+    display: flex;
+    flex-direction: column;
+    }
+
+    .iconRow ul li{
+    justify-content: center;
+    }
+
+    .iconRow{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    }
+
+    .detailsText{
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+    }
+
+    .detailsText p {
+    width: 100%;
+    }
+
+}

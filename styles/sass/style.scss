@@ -5,7 +5,7 @@
 @import 'typography';
 @import 'variables';
 @import 'footer';
-@import 'media';
+
 
 $fontStyleOne: 'Montserrat', sans-serif;
 $fontStyleTwo: 'Open Sans', sans-serif;
@@ -314,7 +314,9 @@ Blog Styles
 ======================*/
 .agencySec h1{
     text-align: center;
-    padding: 50px 0 0 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .agencySec h6{
@@ -404,11 +406,14 @@ Blog Styles
 .postGallery{
     display: flex;
     padding-bottom: 40px;
+    width: 100%;
 }
+
 
 .postGallery img,
 .postGallery p{
     padding: 0 10px;
+    width: 100%;
 }
 
 .comments h2 {
@@ -585,5 +590,21 @@ input[name=message] {
 .contactForms{
     padding-bottom: 90px;
 }
+
+.burger{
+    
+    visibility: hidden;
+}
+
+.burger i{
+    
+}
+
+.burger a {
+    
+}
+
+
+@import 'media';
 
 
