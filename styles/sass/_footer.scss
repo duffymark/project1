@@ -89,3 +89,8 @@ footer h2{
 .footerButton i{
     color: #333333 ;
 }
+
+.footerButton:hover,
+.footerButton i:hover{
+    color: #f6f6f6;
+}

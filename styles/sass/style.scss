@@ -1,9 +1,6 @@
 // inside style.scss
-@import 'setup';
 @import 'header';
-@import 'nav';
 @import 'typography';
-@import 'variables';
 @import 'footer';
 
 
@@ -16,15 +13,13 @@ $fontStyleTwo: 'Open Sans', sans-serif;
     margin: 0 auto;
 }
 
+body{
+    background-color: #f6f6f6;
+}
+
 li a{
     text-decoration: none;
 }
-/*
-img{
-display: block;
-max-width: 100%;
-}
-*/
 
 html {
     font-size: 125%;
@@ -181,12 +176,16 @@ Gallery
 }
 
 .teamPadding::before{
-    content:"";
-    border-left: 2px solid grey;
-    margin: 0 auto;
-    height: 5%;
+    content: "";
     position: absolute;
-    top: 8%;
+    height: 1px;
+    width: calc( 100px - 60px);
+    transform: rotate(90deg);
+    background-color: rgba(51, 51, 51, 0.4);
+    top: 20px;
+    right: 50%;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .teamPadding{
@@ -270,7 +269,7 @@ Gallery
 
 .portButton{
     width: 30%;
-    background: white;
+    background-color: #f6f6f6;
     border: none;
     padding: 2% 1%;
 }
@@ -278,6 +277,7 @@ Gallery
 .portButton a{
     font-weight: bold;
     text-transform: uppercase;
+    background-color: #f6f6f6;
 }
 
 .dropLineImage img{
@@ -288,7 +288,6 @@ Gallery
 .dropLineText{
     text-align: center;
     background: #C3DAB7 center;
-    
     display: flex;
     align-content: center;
     justify-content: center;
@@ -320,6 +319,12 @@ Blog Styles
 }
 
 .agencySec h6{
+    color:rgba(185, 175, 175, 0.4);
+    padding-bottom: 60px;
+}
+
+.agencySec span{
+    color: #333333;
     padding-bottom: 60px;
 }
 
@@ -328,12 +333,24 @@ Blog Styles
     justify-content: flex-end;
 }
 
+.rightMenu h6{
+    color: rgba(54, 48, 48, 0.4);
+}
+
+.lite p {
+    color: rgba(54, 48, 48, 0.4);
+}
+
 .alexAdmin li img{
     border-radius: 360px;
 }
 
 .alexAdmin li{
     padding-right: 20px;
+}
+
+.alexAdmin h6{
+    color: rgba(54, 48, 48, 0.4);
 }
 
 .adminRow{
@@ -437,6 +454,29 @@ Blog Styles
     width: 100%
 }
 
+.comment-1 ul h5,
+.comment-2 ul h5 {
+    text-transform: uppercase;
+}
+
+.comment-1 ul h5 span,
+.comment-2 ul h5 span{
+    font-style: italic;
+    text-transform: none;
+    font-weight: 400;
+}
+
+.comment-1 ul p,
+.comment-2 ul p {
+    color: rgba(54, 48, 48, 0.4);
+}
+
+.comment-1 ul h6,
+.comment-2 ul h6 {
+    color: rgba(54, 48, 48, 0.4);
+    font-weight: 200;
+}
+
 .comment-1 img {
     padding-right: 40px;
     height: 90%;
@@ -463,30 +503,31 @@ Blog Styles
 
 /* CONTACT US PAGE */
 
-.quarterImg{
+    .quarterImg{
     background: url(../assets/contact-1.jpeg);
     background-size: cover;
-height: 30vh;
-overflow: hidden;
-}
+    height: 30vh;
+    overflow: hidden;
+    }
 
-.quarterImg{
+    .quarterImg{
     position: relative;
-  
-}
+    }
 
-.contactUsText{
+    .contactUsText{
     position: absolute;
     top: 41%;
     left: 12%;
     width: 0%;
     padding-bottom: 10%;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
-.contSect{
+    .contSect{
     padding-bottom: 120px;
     padding-top: 3%;
-}
+    }
 
 /* Contact Details Section*/
 
@@ -499,6 +540,7 @@ overflow: hidden;
 .detailsText p{
     padding-bottom: 40px;
     width: 55%;
+    color: rgba(51, 51, 51, 0.4);
 }
 
 .contactIcons {
@@ -521,6 +563,10 @@ overflow: hidden;
     font-weight: bold;
 }
 
+.iconRow p{
+    color:rgba(51, 45, 45, 0.4);
+}
+
 .sideBorder{
     border-left: 1px solid grey;
     border-right: 1px solid grey;
@@ -530,15 +576,17 @@ overflow: hidden;
 
 /* GET IN TOUCH SECTION */
 
-.getInTouch,
+
 .getInTouch h2{
     text-transform: uppercase;
     font-weight: bold;
     padding-bottom: 20px;
+    
 }
 
 .getInTouch p {
     padding-bottom: 20px;
+    color: rgba(54, 48, 48, 0.4);
 }
 
 /* GET IN TOUCH FORMS */
@@ -551,6 +599,7 @@ input[type=email] {
     box-sizing: border-box;
     border: none;
     border-bottom: 2px solid lightgrey;
+    background-color: #f6f6f6;
 }
 
 input[name=message] {
@@ -559,21 +608,32 @@ input[name=message] {
     padding: 0px;
     margin: 0;
     border-bottom: 2px solid lightgrey;
+    background-color: #f6f6f6;
+}
+
+input[name=message]:hover,
+input[type=text]:hover,
+input[type=email]:hover{
+    border-bottom: 1px solid black;
 }
 
 *:focus {
     outline: none;
 }
 
+
 .formButton {
-    padding-top: 60px;
+    padding: 10px 0;
     margin: 0;
     border: none;
     border-bottom: 2px solid black;
     text-transform: uppercase;
     font-weight: bold;
     background: none;
-    
+}
+
+.formButton:hover {
+    background-color: lightgray;
 }
 
 .contactImage-2 img {
@@ -592,17 +652,9 @@ input[name=message] {
 }
 
 .burger{
-    
     visibility: hidden;
 }
 
-.burger i{
-    
-}
-
-.burger a {
-    
-}
 
 
 @import 'media';

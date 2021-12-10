@@ -480,7 +480,6 @@ footer p {
   text-align: center;
 }
 
-/* $fa-font-path: "./webfonts"; */
 /* FOOTER */
 .footerInfo {
   background: #333333;
@@ -575,22 +574,25 @@ footer h2 {
   color: #333333;
 }
 
+.footerButton:hover,
+.footerButton i:hover {
+  color: #f6f6f6;
+}
+
 .wrapper {
   width: 90%;
   max-width: 1080px;
   margin: 0 auto;
 }
 
+body {
+  background-color: #f6f6f6;
+}
+
 li a {
   text-decoration: none;
 }
 
-/*
-img{
-display: block;
-max-width: 100%;
-}
-*/
 html {
   font-size: 125%;
   line-height: 1.15;
@@ -768,11 +770,16 @@ Gallery
 
 .teamPadding::before {
   content: "";
-  border-left: 2px solid grey;
-  margin: 0 auto;
-  height: 5%;
   position: absolute;
-  top: 8%;
+  height: 1px;
+  width: calc( 100px - 60px);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  background-color: rgba(51, 51, 51, 0.4);
+  top: 20px;
+  right: 50%;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .teamPadding {
@@ -885,7 +892,7 @@ Gallery
 
 .portButton {
   width: 30%;
-  background: white;
+  background-color: #f6f6f6;
   border: none;
   padding: 2% 1%;
 }
@@ -893,6 +900,7 @@ Gallery
 .portButton a {
   font-weight: bold;
   text-transform: uppercase;
+  background-color: #f6f6f6;
 }
 
 .dropLineImage img {
@@ -944,6 +952,12 @@ Blog Styles
 }
 
 .agencySec h6 {
+  color: rgba(185, 175, 175, 0.4);
+  padding-bottom: 60px;
+}
+
+.agencySec span {
+  color: #333333;
   padding-bottom: 60px;
 }
 
@@ -956,12 +970,24 @@ Blog Styles
           justify-content: flex-end;
 }
 
+.rightMenu h6 {
+  color: rgba(54, 48, 48, 0.4);
+}
+
+.lite p {
+  color: rgba(54, 48, 48, 0.4);
+}
+
 .alexAdmin li img {
   border-radius: 360px;
 }
 
 .alexAdmin li {
   padding-right: 20px;
+}
+
+.alexAdmin h6 {
+  color: rgba(54, 48, 48, 0.4);
 }
 
 .adminRow {
@@ -1078,6 +1104,29 @@ Blog Styles
   width: 100%;
 }
 
+.comment-1 ul h5,
+.comment-2 ul h5 {
+  text-transform: uppercase;
+}
+
+.comment-1 ul h5 span,
+.comment-2 ul h5 span {
+  font-style: italic;
+  text-transform: none;
+  font-weight: 400;
+}
+
+.comment-1 ul p,
+.comment-2 ul p {
+  color: rgba(54, 48, 48, 0.4);
+}
+
+.comment-1 ul h6,
+.comment-2 ul h6 {
+  color: rgba(54, 48, 48, 0.4);
+  font-weight: 200;
+}
+
 .comment-1 img {
   padding-right: 40px;
   height: 90%;
@@ -1125,6 +1174,8 @@ Blog Styles
   left: 12%;
   width: 0%;
   padding-bottom: 10%;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .contSect {
@@ -1142,6 +1193,7 @@ Blog Styles
 .detailsText p {
   padding-bottom: 40px;
   width: 55%;
+  color: rgba(51, 51, 51, 0.4);
 }
 
 .contactIcons {
@@ -1168,6 +1220,10 @@ Blog Styles
   font-weight: bold;
 }
 
+.iconRow p {
+  color: rgba(51, 45, 45, 0.4);
+}
+
 .sideBorder {
   border-left: 1px solid grey;
   border-right: 1px solid grey;
@@ -1176,7 +1232,6 @@ Blog Styles
 }
 
 /* GET IN TOUCH SECTION */
-.getInTouch,
 .getInTouch h2 {
   text-transform: uppercase;
   font-weight: bold;
@@ -1185,6 +1240,7 @@ Blog Styles
 
 .getInTouch p {
   padding-bottom: 20px;
+  color: rgba(54, 48, 48, 0.4);
 }
 
 /* GET IN TOUCH FORMS */
@@ -1197,6 +1253,7 @@ input[type=email] {
           box-sizing: border-box;
   border: none;
   border-bottom: 2px solid lightgrey;
+  background-color: #f6f6f6;
 }
 
 input[name=message] {
@@ -1205,6 +1262,13 @@ input[name=message] {
   padding: 0px;
   margin: 0;
   border-bottom: 2px solid lightgrey;
+  background-color: #f6f6f6;
+}
+
+input[name=message]:hover,
+input[type=text]:hover,
+input[type=email]:hover {
+  border-bottom: 1px solid black;
 }
 
 *:focus {
@@ -1212,13 +1276,17 @@ input[name=message] {
 }
 
 .formButton {
-  padding-top: 60px;
+  padding: 10px 0;
   margin: 0;
   border: none;
   border-bottom: 2px solid black;
   text-transform: uppercase;
   font-weight: bold;
   background: none;
+}
+
+.formButton:hover {
+  background-color: lightgray;
 }
 
 .contactImage-2 img {
