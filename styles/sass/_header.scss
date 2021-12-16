@@ -24,13 +24,14 @@ height: 100vh;
 
 /*============================
 BLOG NAV
-
 =============================*/
 .burger a{
     visibility: hidden;
+    display: none;
 }
 .burger i{
     visibility: hidden;
+    display: none;
 }
 
 .blogBack{
@@ -60,7 +61,6 @@ BLOG NAV
 
 /*============================
 Universal Nav Styles
-
 =============================*/
 
 .centeredLogo{
@@ -113,4 +113,49 @@ Universal Nav Styles
     padding: 10px;
     
 }
+
+.burgerLinks {
+    padding: 200px;
+}
+
+/* ------JAVA MENU -------*/
+
+#buttonMenu{
+    visibility: visible;
+    outline: none;
+    border: none;
+    z-index: 3;
+    
+}
+
+.mobileMenu ul {
+    display: none;
+    visibility: visible;
+}
+
+.mobileMenu ul a:hover{
+    text-decoration: line-through;
+}
+
+.menuPosition{
+    padding-top: 15%;
+    padding-bottom:5%;;
+    text-align: center;
+}
+
+.mobileLogo{
+    visibility: hidden;
+    display: none;
+}
+
+.contactMenuPos{
+    background-color: #f6f6f6;;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+/* -----Contact HIDDEN MENU-------*/
+
+
 

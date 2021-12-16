@@ -6,15 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="../styles/style.css">
+    <script type="text/javascript" src="./JavaScript/burger.js"></script>
     <script src="https://kit.fontawesome.com/a451e836b2.js" crossorigin="anonymous"></script>
 </head>
 
 <header class="contactBack">
     <div class="burger">
-        <i class="fas fa-bars"></i><a class="logo" href="">CREATIVE</a>
+        <button id="buttonMenu" class="buttonTransparent" onClick="displayMenu()">
+            <i class="fas fa-bars" id="hiddenMenu"></i>
+        </button>
+        <a class="logo" href=""><h1>CREATIVE</h1></a>
     </div>
+<div class="mobileMenu">
+    <ul id="#buttonMenu" class="menuPosition contactMenuPos">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Portfolio</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</div>
+
+<div>
+    <h1 class="mobileLogo">CREATIVE</h1>
+</div>
+
     <nav class="headerNavBlog">
-    
         <ul class="leftLinks">
             <li><a href="../index.html">Home</a></li>
             <li><a href="blog.html">Blog</a></li>
@@ -39,6 +56,7 @@
             <div class="quarterImg">   
             </div>
             <h1 class="contactUsText">Contact US</h1>
+        
     </section>
 
     <section>
@@ -173,5 +191,6 @@
     
     </div>
 </footer>
+<script src="../JavaScript/burger.js"></script>
 </body>
 </html>

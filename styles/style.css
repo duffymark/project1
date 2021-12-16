@@ -253,14 +253,15 @@ html {
 
 /*============================
 BLOG NAV
-
 =============================*/
 .burger a {
   visibility: hidden;
+  display: none;
 }
 
 .burger i {
   visibility: hidden;
+  display: none;
 }
 
 .blogBack {
@@ -291,7 +292,6 @@ BLOG NAV
 
 /*============================
 Universal Nav Styles
-
 =============================*/
 .centeredLogo {
   padding: 10px;
@@ -357,6 +357,46 @@ Universal Nav Styles
   padding: 10px;
 }
 
+.burgerLinks {
+  padding: 200px;
+}
+
+/* ------JAVA MENU -------*/
+#buttonMenu {
+  visibility: visible;
+  outline: none;
+  border: none;
+  z-index: 3;
+}
+
+.mobileMenu ul {
+  display: none;
+  visibility: visible;
+}
+
+.mobileMenu ul a:hover {
+  text-decoration: line-through;
+}
+
+.menuPosition {
+  padding-top: 15%;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+.mobileLogo {
+  visibility: hidden;
+  display: none;
+}
+
+.contactMenuPos {
+  background-color: #f6f6f6;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+
+/* -----Contact HIDDEN MENU-------*/
 /* =======================
 FONT IMPORTS
 ======================= */
@@ -577,6 +617,51 @@ footer h2 {
 .footerButton:hover,
 .footerButton i:hover {
   color: #f6f6f6;
+}
+
+.contactHiddenMenu {
+  padding-top: 15%;
+  padding-bottom: 5%;
+  position: absolute;
+  background-color: #f6f6f6;
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  z-index: 2;
+}
+
+#buttonMenu li a {
+  visibility: visible;
+  display: block;
+  background-color: transparent;
+}
+
+.mobileMenu {
+  display: block;
+  visibility: visible;
+}
+
+.mobileLogo {
+  visibility: hidden;
+  display: none;
+}
+
+.contactBack {
+  background-image: none;
+}
+
+.buttonTransparent {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }
 
 .wrapper {
@@ -1338,6 +1423,8 @@ HOME MEDIA QUERIES
   }
 
   .burger {
+    display: inline;
+    visibility: visible;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1359,6 +1446,13 @@ HOME MEDIA QUERIES
 
   h3 {
     font-size: 0.75rem;
+  }
+
+  .mobileLogo {
+    visibility: visible;
+    display: block;
+    text-align: center;
+    padding-top: 60%;
   }
 
   .iconGallery {
@@ -1788,6 +1882,7 @@ MEDIA QUERIES CONTAT
 
   .burger i {
     padding-top: 5%;
+    display: block;
   }
 
   header {
