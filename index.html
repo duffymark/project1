@@ -13,6 +13,7 @@
 </head>
 <!--   NAV BAR   -->
 <header class="index">
+    <nav class="mobileBurger">
     <div class="burger">
         <button id="buttonMenu" class="buttonTransparent" onClick="displayMenu()">
             <i class="fas fa-bars" id="hiddenMenu"></i>
@@ -24,22 +25,23 @@
     <ul id="#buttonMenu" class="menuPosition">
         <li><a href="/index.html">Home</a></li>
         <li><a href="./html/blog.html">Blog</a></li>
-        <li><a href="./html/contact.html">Portfolio</a></li>
+        <li><a href="#">Portfolio</a></li>
         <li><a href="#">Shop</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="./html/contact.html">Contact</a></li>
     </ul>
 </div>
 
 <div>
     <h1 class="mobileLogo">CREATIVE</h1>
 </div>
+</nav>
     
 </div>
     <nav class="headerNavBlog">
         <ul class="leftLinks">
             <li><a href="/index.html">Home</a></li>
             <li><a href="./html/blog.html">Blog</a></li>
-            <li><a href="./html/contact.html">Portfolio</a>
+            <li><a href="#">Portfolio</a>
             </li>
         </ul>
 
@@ -49,7 +51,7 @@
 
         <ul class="rightLinks">
             <li><a href="">Shop</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="./html/contact.html">Contact</a></li>
             <li><a href=""><i class="fas fa-search"></i></a>
             </li>
             <li><a href=""><i class="fas fa-shopping-bag"></i></a></li>
@@ -310,13 +312,13 @@
                         <ul>
                             <h2>Twitter Widget</h2>
                             <li>
-                                <p>Signup for emails and notifications below.</p>
+                                <p class= "append">Signup for emails and notifications below.</p>
                             </li>
                         </ul>
 
                         <div class="inputContainer">
-                            <input name="emailField" id="footerEmail" type="email" placeholder="Enter your email" onclick="submitEmail">
-                            <button class="footerButton"><i class="fas fa-long-arrow-alt-right"></i>
+                            <input name="emailField" id="footerEmail" type="email" placeholder="Enter your email">
+                            <button class="footerButton"><i class="fas fa-long-arrow-alt-right" ></i>
                             </button>
                         </div>
                     </div>
